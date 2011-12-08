@@ -1,5 +1,7 @@
 FinalApp::Application.routes.draw do
   
+  get "users/new"
+
   root :to => 'pages#home'
   match '/roster', :to => 'pages#roster'  
   match '/photos', :to => 'pages#photos'
@@ -7,6 +9,7 @@ FinalApp::Application.routes.draw do
   match '/sponsors', :to => 'pages#sponsors'
   match '/contact', :to => 'pages#contact'
 
+  match '/signup', :to => 'users#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
