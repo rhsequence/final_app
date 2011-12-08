@@ -1,4 +1,16 @@
 FinalApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/roster"
+
+  get "pages/photos"
+
+  get "pages/coaches"
+
+  get "pages/sponsors"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
