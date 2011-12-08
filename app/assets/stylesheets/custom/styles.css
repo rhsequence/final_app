@@ -28,10 +28,10 @@ background-color:#FF3300;
   text-decoration: none;
   padding: .25em 1em;
 }
-a:link, a:visited { color: #fff; }
+a:link, a:visited { color: #FB9300; }
 #navigation ul li a:hover {
   background-color: #fff;
-  color: #000;
+  color: #000066;
 }
 
 #sidebar
@@ -63,7 +63,7 @@ margin-bottom:35px;
 text-align:right;
 }
 #footer{
-background-color:#FB9300;
+background-color:#000;
 color:#FFF;
 padding:5px;
 text-align:center;
