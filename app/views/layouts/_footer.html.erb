@@ -1,3 +1,7 @@
 <div id="footer">
+	<% if signed_in? %>
+	Website Created by Richard Hernandez
+	<% else %>
 	<%= link_to "Sign Up now!", signup_path, :class => "signup_button round " %>
+	<% end %>
 </div>

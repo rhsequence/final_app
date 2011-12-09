@@ -1,10 +1,12 @@
 FinalApp::Application.routes.draw do
+  resources :posts
+
   get "sessions/new"
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
 
-  root :to => 'pages#home'
+  root :to => 'posts#index'
   match '/roster', :to => 'pages#roster'  
   match '/photos', :to => 'pages#photos'
   match '/coaches', :to => 'pages#coaches'
