@@ -50,6 +50,9 @@ group :development do
    gem 'faker', '~> 1.0.1'
 end
 
+gem 'execjs'
+gem 'therubyracer'
+
 group :test do
    gem 'rspec', '~> 2.7.0'
    gem 'webrat', '~> 0.7.3'
