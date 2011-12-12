@@ -1,5 +1,13 @@
+<% if @posts.nil? %>
+
+<% else %>
 <div id="sidebar">
+<h2>Recent Posts</h2>
 	<ul>
-	<li>Post 1</li>
+	<% @posts.each do |post| %>
+		<li><%= link_to post.title, post %></li>
+	<% end %>
+
 	</ul>
 </div>
+<% end %>
